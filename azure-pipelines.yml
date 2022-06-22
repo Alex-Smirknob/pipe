@@ -22,13 +22,3 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- task: VSTest@2
-  inputs:
-    testSelector: 'testPlan'
-    testPlan: '658'
-    testSuite: '659'
-    testConfiguration: '3'
-    searchFolder: '$(System.DefaultWorkingDirectory)'
-    testRunTitle: 'DDR UI Automated Test'
-    platform: 'Windows / MS Edge'
-    configuration: 'Default'
